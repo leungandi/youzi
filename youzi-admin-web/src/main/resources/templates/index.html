@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>柚子管理系统</title>
+
+	<link rel="stylesheet" type="text/css" href="/layui/css/layui.css">
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		html{
+			background-color: #f2f2f2;
+		}
+		.login-box{
+			position: relative;
+		}
+		.login-main{
+			margin:100px auto;
+			width: 300px;
+		}
+		.login-header{
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		.login-header h2{
+			margin-bottom: 5px;
+		}
+		.login-header p{
+			font-weight: 300;
+    		color: #999;
+		}
+		.layui-form-item{
+			position: relative;
+		}
+		.login-user-icon{
+		    position: absolute;
+		    color: #d2d2d2;
+		    text-align: center;
+		    top: 10px;
+		    width: 25px;
+		}
+		.login-pwd-icon{
+		    position: absolute;
+		    color: #d2d2d2;
+		    text-align: center;
+		    top: 10px;
+		    width: 25px;
+		}
+		.layui-input{
+			padding-left: 25px;
+    		color: #D2D2D2;
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="login-box">
+		<div class="login-main">
+			<div class="login-header">
+				<h2>柚子管理系统</h2>
+				<p>欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎欢迎</p>
+			</div>
+			<div class="login-input">
+				<form class="layui-form" action="">
+					  <div class="layui-form-item">
+					    <label class="login-user-icon layui-icon layui-icon-username"></label>
+          				<input type="text" name="username" id="username" lay-verify="required" placeholder="用户名" class="layui-input">
+					  </div>
+					  <div class="layui-form-item">
+					    <label class="login-pwd-icon layui-icon layui-icon-password"></label>
+          				<input type="password" name="password" id="password" lay-verify="required" placeholder="密码" class="layui-input">
+					  </div>
+					  <div class="layui-form-item">
+					    <div class="layui-input-block">
+					      <button class="layui-btn" lay-submit lay-filter="formDemo">登录</button>
+					    </div>
+					  </div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+<script type="text/javascript" src="./static/layui/layui.js"></script>
+<script type="text/javascript">
+	layui.use(['form'], function(){
+	  form = layui.form;
+});
+</html>

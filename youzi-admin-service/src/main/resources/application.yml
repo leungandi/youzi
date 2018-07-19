@@ -1,0 +1,15 @@
+name: youzi
+version: 1.0.0
+
+# 环境配置
+server:
+  port: 8082
+  tomcat:
+    uri-encoding: utf-8
+
+# 日志配置
+logging:
+  config: classpath:logback.xml
+
+
+
